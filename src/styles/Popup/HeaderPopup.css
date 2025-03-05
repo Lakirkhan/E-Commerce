@@ -1,0 +1,80 @@
+/* Unique styles for Header Popup */
+.header-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.header-popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.header-popup-buttons {
+  margin-top: 15px;
+}
+
+.header-login-btn,
+.header-signup-btn {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.header-login-btn {
+  background: #007bff;
+  color: white;
+}
+.header-signup-btn {
+  background: #28a745;
+  color: white;
+}
+
+.header-login-btn:hover {
+  background: #0056b3;
+}
+.header-signup-btn:hover {
+  background: #218838;
+}
+
+.header-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.header-close-btn:hover {
+  color: red;
+}

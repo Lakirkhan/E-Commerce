@@ -1,0 +1,75 @@
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+}
+
+.feature-box {
+  flex: 1;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Common animation styles */
+.animated-icon {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Effect: Bounce and Scale */
+.feature-box:hover .animated-icon {
+  transform: scale(1.2) translateY(-5px);
+  animation: bounce 0.5s ease-in-out;
+}
+
+/* Keyframes for Bounce Effect */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1.2) translateY(0);
+  }
+  50% {
+    transform: scale(1.3) translateY(-8px);
+  }
+}
+
+/* Icon colors */
+.rotate-icon {
+  color: #ff5733; /* Red-Orange */
+}
+.truck-icon {
+  color: #3498db; /* Blue */
+}
+.headphone-icon {
+  color: #27ae60; /* Green */
+}
+.check-icon {
+  color: #f1c40f; /* Yellow */
+}
+
+/* Icon hover effects */
+.feature-box:hover .rotate-icon {
+  color: #e74c3c;
+  .feature-box:hover .truck-icon {
+    color: #2980b9; /* Darker Blue */
+  }
+  .feature-box:hover .headphone-icon {
+    color: #2ecc71; /* Brighter Green */
+  }
+  .feature-box:hover .check-icon {
+    color: #f39c12; /* Darker Yellow */
+  }
+
+  .feature-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .feature-description {
+    font-size: 14px;
+    color: gray;
+  }
+}

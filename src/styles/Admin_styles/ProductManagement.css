@@ -1,0 +1,154 @@
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Top Section */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Entries Dropdown */
+.entries-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.select-entries {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.select-entries:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-info img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 6px 12px;
+  background: white;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 200px;
+}
+
+.search-icon {
+  width: 94px;
+  height: 16px;
+  opacity: 0.6;
+}
+
+/* Add Button */
+.add-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.add-button:hover {
+  background-color: #2563eb;
+}
+
+.add-button::before {
+  content: "+";
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+/* Table */
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-container th,
+.table-container td {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table-container th {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+.table-container tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* Product Info */
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.product-info img {
+  width: 5%;
+  height: 40px;
+  object-fit: contain;
+  background: #f1f1f1;
+  padding: 0px;
+}

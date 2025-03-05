@@ -1,0 +1,59 @@
+.brands-logo-container-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #f5f5f5; /* Optional: Adjust background color */
+  padding: 10px 0;
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee-scroll 10s linear infinite; /* Speed & direction */
+}
+
+/* Duplicate content to create a seamless infinite loop */
+.marquee-content li {
+  list-style: none;
+  margin-right: 50px; /* Adjust space between logos */
+}
+
+.marquee-content img {
+  width: 120px; /* Adjust logo size */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.marquee-content img:hover {
+  transform: scale(1.1);
+}
+
+/* Animation keyframes */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-content::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+}

@@ -1,0 +1,75 @@
+/* Login Page Styles */
+.ln-login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.ln-login-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.ln-error {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.ln-login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ln-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out;
+}
+
+.ln-input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.ln-login-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.ln-login-button:hover {
+  background-color: #45a049;
+}
+
+.ln-signup-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.ln-signup-link {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ln-signup-link:hover {
+  text-decoration: underline;
+}
